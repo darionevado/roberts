@@ -1,0 +1,27 @@
+/*Comienzo del BODY*/
+
+.body__caja-contenedor {
+	display: flex;
+	flex-flow: row nowrap;
+	padding-top: 10 px;
+	padding-bottom: 20px;
+}
+
+.body__columnaIzquierda {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.body__columnaCentral {
+	display: flex;
+	flex: 1;
+	margin-top: 10px;
+	padding: auto;
+}
+
+.body__columnaDerecha {
+	display: flex;
+	flex: 1;
+	margin-top: 10px;
+}

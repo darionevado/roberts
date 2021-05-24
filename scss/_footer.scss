@@ -1,0 +1,24 @@
+/*Aca defino la estructura del pie de pagina*/
+
+.footer__caja-contenedor-footer {
+	display: flex;
+	flex-flow: row nowrap;
+	background-image: linear-gradient(red, whitesmoke);
+	width: 1024px;
+	height: 80px;
+}
+
+.footer__legales {
+	padding: 10px 10px;
+	display: flex;
+	flex: 1;
+	margin-top: 10px;
+	align-items: center;
+}
+
+.footer__disenador {
+	padding: 10px 10px;
+	display: flex;
+	flex: 1;
+	align-items: center;
+}

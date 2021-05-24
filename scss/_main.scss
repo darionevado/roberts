@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	color: red;
+	font-family: 'Acme', sans-serif;
+	font-size: 300%;
+	margin: top;
+	padding: 20px;
+	text-align: left;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-family: 'Acme', sans-serif;
+	margin: top;
+	color: red;
+}
+
+h3 {
+	font-family: 'Acme', sans-serif;
+	margin: top;
+	color: whitesmoke;
+	font-size: 100%;
+}
+
+h4 {
+	font-family: 'Acme', sans-serif;
+	margin: top;
+	color: white;
+	font-size: 50 em;
+}

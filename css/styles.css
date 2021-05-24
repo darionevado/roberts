@@ -1,0 +1,266 @@
+/*Estilos de mi Sitio Web*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1 {
+  color: red;
+  font-family: 'Acme', sans-serif;
+  font-size: 300%;
+  margin: top;
+  padding: 20px;
+  text-align: left;
+  letter-spacing: 2px; }
+
+h2 {
+  font-family: 'Acme', sans-serif;
+  margin: top;
+  color: red; }
+
+h3 {
+  font-family: 'Acme', sans-serif;
+  margin: top;
+  color: whitesmoke;
+  font-size: 100%; }
+
+h4 {
+  font-family: 'Acme', sans-serif;
+  margin: top;
+  color: white;
+  font-size: 50 em; }
+
+/*Comienzo de la definicion de las zonas con flex*/
+body {
+  background-image: url(../img/fondo.jpg);
+  display: flex;
+  height: auto;
+  flex-flow: column nowrap;
+  padding: 1em;
+  justify-content: center;
+  align-items: center; }
+
+/*Aca puedo reutilizar codigo pero por ahora tengo los 3 contenedores por separado aplicando GRID*/
+.header__caja-contenedor-cabecera {
+  width: 1024px;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: grid;
+  /*Aca comienzo a usar Grid para la Cabecera del Home*/
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "logo titulo titulo" "logo slogan slogan" "logo redes redes"; }
+
+.header__escudo figure img {
+  grid-area: logo;
+  text-align: center;
+  padding-top: 10%;
+  /* Zoomf In para el Escudo */
+  width: 150px;
+  height: auto;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.header__escudo figure:hover img {
+  width: 180px; }
+
+.header__tituloPrincipal {
+  grid-area: titulo;
+  text-align: center; }
+
+.header__slogan {
+  grid-area: slogan;
+  text-align: left;
+  padding-top: 5%;
+  --animate-duration: 5s;
+  --animate-repeat: 2; }
+
+.header__redes {
+  grid-area: redes;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none; }
+
+.buscador {
+  grid-area: buscador;
+  padding-top: 5%; }
+
+/*Definicion de la barra de redes sociales*/
+header .header__redes {
+  grid-area: redes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none; }
+
+header .header__redes i {
+  color: red;
+  font-size: 30px;
+  padding: 0.2em; }
+
+header .header__redes i:hover {
+  color: coral; }
+
+/*fin barra redes sociales*/
+/*Aca comienzo a definir la estructura de la barra de menu*/
+.header__navegacion {
+  width: 100%;
+  margin: 30px auto;
+  background: whitesmoke; }
+
+.header__navegacion ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.header__navegacion__menu > li {
+  position: relative;
+  display: inline-block; }
+
+.header__navegacion__menu > li > a {
+  display: block;
+  padding: 15px 20px;
+  /*border-style: ridge;*/
+  color: red;
+  font-family: 'Dela Gothic One', cursive;
+  text-decoration: none; }
+
+.header__navegacion__menu li a:hover {
+  color: #CE7D35;
+  transition: all .3s; }
+
+/*Aca defino la estructura del Submenu*/
+.header__navegacion__menu__submenu {
+  position: absolute;
+  background: red;
+  width: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s; }
+
+.header__navegacion__menu__submenu li a {
+  display: block;
+  padding: 15px;
+  /*border-style: ridge;*/
+  color: #fff;
+  font-family: 'Dela Gothic One', cursive;
+  text-decoration: none; }
+
+.header__navegacion__menu li:hover .header__navegacion__menu__submenu {
+  visibility: visible;
+  opacity: 1; }
+
+/*Comienzo del BODY*/
+.body__caja-contenedor {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 10 px;
+  padding-bottom: 20px; }
+
+.body__columnaIzquierda {
+  display: flex;
+  flex: 1;
+  margin-top: 10px; }
+
+.body__columnaCentral {
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+  padding: auto; }
+
+.body__columnaDerecha {
+  display: flex;
+  flex: 1;
+  margin-top: 10px; }
+
+/*Aca defino la estructura del pie de pagina*/
+.footer__caja-contenedor-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: linear-gradient(red, whitesmoke);
+  width: 1024px;
+  height: 80px; }
+
+.footer__legales {
+  padding: 10px 10px;
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+  align-items: center; }
+
+.footer__disenador {
+  padding: 10px 10px;
+  display: flex;
+  flex: 1;
+  align-items: center; }
+
+@media (max-width: 575.98px) {
+  body {
+    background-image: url(../img/fondo-rosa.jpg); }
+  .caja-contenedor-body {
+    display: flex;
+    flex-flow: column; }
+  .header__navegacion {
+    width: 280px;
+    align-items: center; }
+  .header__navegacion ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center; }
+  .header__caja-contenedor-cabecera {
+    width: 500px;
+    height: 300px; }
+  h1 {
+    font-size: 150%; }
+  h2 {
+    font-size: 100%;
+    color: coral; }
+  .header__escudo figure img {
+    width: 100px; }
+  .header__escudo figure:hover img {
+    width: 140px; } }
+
+/*Aca defino el estilo de la pagina de Deportes*/
+.caja-contenedor-deportes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 10px;
+  margin-top: 10px;
+  background-color: coral;
+  width: 900px;
+  height: 50px;
+  align-items: center;
+  padding: 15px 20px; }
+
+/*Aca defino la estructura de la tabla de la pagina E-shops*/
+table {
+  border: 5px solid;
+  border-color: whitesmoke;
+  background-color: #e9818a;
+  padding: 15px 20px; }
+
+th {
+  background-color: #cccccc;
+  border: 0px solid; }
+
+/*Aca defino el estilo del formulario de la pagina Contacto*/
+.formulario {
+  width: 940px;
+  height: 320px;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Acme', sans-serif;
+  font-size: 100%;
+  line-height: 250%;
+  word-spacing: 100%;
+  background-image: linear-gradient(red, white); }

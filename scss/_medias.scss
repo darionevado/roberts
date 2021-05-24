@@ -1,0 +1,37 @@
+@media (max-width: 575.98px) {
+	body {
+		background-image: url(../img/fondo-rosa.jpg);
+	}
+	.caja-contenedor-body {
+		display: flex;
+		flex-flow: column;
+	}
+	.header__navegacion {
+		width: 280px;
+		align-items: center;
+	}
+	.header__navegacion ul{
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.header__caja-contenedor-cabecera {
+		width: 500px;
+		height: 300px;
+	}
+	h1 {
+		font-size: 150%;
+	}
+	h2 {
+		font-size: 100%;
+        color: coral;
+    }
+	.header__escudo figure img {
+		width: 100px;
+	}
+	.header__escudo figure:hover img {
+		width: 140px;
+	}
+}
