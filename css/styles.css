@@ -18,7 +18,8 @@ h1 {
 h2 {
   font-family: 'Acme', sans-serif;
   margin: top;
-  color: red; }
+  color: red;
+  font-size: 200%; }
 
 h3 {
   font-family: 'Acme', sans-serif;
@@ -29,8 +30,8 @@ h3 {
 h4 {
   font-family: 'Acme', sans-serif;
   margin: top;
-  color: white;
-  font-size: 50 em; }
+  color: whitesmoke;
+  font-size: 60 px; }
 
 /*Comienzo de la definicion de las zonas con flex*/
 body {
@@ -180,12 +181,17 @@ header .header__redes i:hover {
   flex: 1;
   margin-top: 10px; }
 
+.card {
+  font-family: 'Dela Gothic One';
+  font-style: italic;
+  color: red; }
+
 /*Aca defino la estructura del pie de pagina*/
 .footer__caja-contenedor-footer {
   display: flex;
   flex-flow: row nowrap;
   background-image: linear-gradient(red, whitesmoke);
-  width: 1024px;
+  width: 100%;
   height: 80px; }
 
 .footer__legales {
@@ -196,7 +202,7 @@ header .header__redes i:hover {
   align-items: center; }
 
 .footer__disenador {
-  padding: 10px 10px;
+  padding: 20px 20px;
   display: flex;
   flex: 1;
   align-items: center; }
@@ -254,7 +260,7 @@ th {
   border: 0px solid; }
 
 /*Aca defino el estilo del formulario de la pagina Contacto*/
-.formulario {
+.body__formulario {
   width: 940px;
   height: 320px;
   margin: 10px;
@@ -264,3 +270,9 @@ th {
   line-height: 250%;
   word-spacing: 100%;
   background-image: linear-gradient(red, white); }
+
+.body__maps {
+  width: auto;
+  height: auto;
+  margin: 20px;
+  padding: 20px; }

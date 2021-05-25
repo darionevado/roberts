@@ -1,6 +1,6 @@
 /*Aca defino el estilo del formulario de la pagina Contacto*/
 
-.formulario {
+.body__formulario {
 	width: 940px;
 	height: 320px;
 	margin: 10px;
@@ -10,4 +10,11 @@
 	line-height: 250%;
 	word-spacing: 100%;
 	background-image: linear-gradient(red, white);
+}
+
+.body__maps {
+	width: auto;
+	height: auto;
+	margin: 20px;
+	padding: 20px;
 }
