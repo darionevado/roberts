@@ -13,4 +13,81 @@ th {
 }
 
 
+.fas.fa-shopping-cart {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 2rem;
+}
 
+.fondo-tienda { 
+    background-color: coral;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 1.8rem 0;
+    margin-top: 2rem;    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);     
+    grid-row-gap: 30px;   
+}
+
+.fondo-tienda article {    
+    color: whitesmoke; 
+    font-size: 1rem;   
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: auto auto auto auto;
+    align-items: center;  
+    justify-items: center; 
+    grid-gap: 1rem;   
+    padding: 10px;
+}
+.fondo-tienda img {   
+    grid-row: 1;    
+}
+.fondo-tienda .titulo {   
+    grid-row: 2;   
+	color: red; 
+	font-size: large;
+}
+.fondo-tienda .descripcion {
+    grid-row: 3;   
+}
+.fondo-tienda .precio {   
+    grid-row: 4;   
+}
+.fondo-tienda button{   
+    grid-row: 5;
+    padding: 0.3rem;
+}
+
+.footer-tienda {
+    font-size: 1.2rem;
+    display: block;
+    padding-left: 2rem;   
+}
+.footer-tienda h4 {
+    margin-bottom: 0.8rem;
+}
+.footer-tienda ul {
+    list-style: none;   
+    display: flex;
+    padding-left: 0;
+}
+.footer-tienda i {
+    margin: 0.3rem;
+    font-size: 2rem;
+    padding: 0;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: red;
+    background-color: whitesmoke;
+    padding: 3%;
+    font-family: Acme;
+    border-top: red groove;
+    border-right: red groove;
+}
