@@ -33,6 +33,12 @@ h4 {
   color: whitesmoke;
   font-size: 60 px; }
 
+h5 {
+  font-family: 'Acme', sans-serif;
+  margin: top;
+  color: red;
+  font-size: 120%; }
+
 /*Comienzo de la definicion de las zonas con flex*/
 body {
   background-image: url(../img/fondo.jpg);
@@ -365,7 +371,7 @@ a.button {
   margin: 20px;
   padding: 20px; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
   body {
     background-image: url(../img/fondo-rosa.jpg); }
   .body__caja-contenedor {
@@ -388,6 +394,8 @@ a.button {
   h2 {
     font-size: 100%;
     color: coral; }
+  h5 {
+    font-size: 80%; }
   .header__escudo figure img {
     width: 100px; }
   .header__escudo figure:hover img {
@@ -397,4 +405,7 @@ a.button {
     grid-template-rows: repeat(4, 1fr); }
   .contenedor-deportes {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr); } }
+    grid-template-rows: repeat(4, 1fr); }
+  .contenedor-video {
+    width: 450px;
+    height: 250px; } }

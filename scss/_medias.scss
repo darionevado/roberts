@@ -1,4 +1,4 @@
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
 	body {
 		background-image: url(../img/fondo-rosa.jpg);
 	}
@@ -28,6 +28,9 @@
 		font-size: 100%;
         color: coral;
     }
+	h5 {
+		font-size: 80%;
+	}
 	.header__escudo figure img {
 		width: 100px;
 	}
@@ -42,5 +45,10 @@
 	.contenedor-deportes { 
 		grid-template-columns: repeat(1,1fr);   
 		grid-template-rows: repeat(4,1fr);      
+	}
+
+	.contenedor-video {
+		width: 450px;
+		height: 250px;
 	}
 }
