@@ -1,14 +1,80 @@
 /*Aca defino el estilo de la pagina de Deportes*/
 
-.caja-contenedor-deportes {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-evenly;
-	margin: 10px;
-	margin-top: 10px;
-	background-color: coral;
-	width: 900px;
-	height: 50px;
-	align-items: center;
-	padding: 15px 20px;
+.fas.fa-shopping-cart {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 2rem;
 }
+
+.contenedor-deportes { 
+    font-family: 'Acme', sans-serif;
+    padding: 1.8rem 0;
+    margin-top: 2rem;    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+    grid-template-rows: repeat(2,1fr);        
+    grid-row-gap: 30px;   
+}
+
+.contenedor-deportes article {    
+	color: whitesmoke; 
+    font-size: 1rem;   
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: auto;
+    align-items: center;  
+    justify-items: center; 
+    grid-gap: 1rem;   
+    padding: 10px;
+}
+.contenedor-deportes img {   
+    grid-row: 1;    
+}
+.contenedor-deportes .titulo {   
+    grid-row: 2;   
+	color: red; 
+	font-size: 300%;
+}
+.contenedor-deportes .descripcion {
+    grid-row: 3;   
+	color: black; 
+}
+
+.contenedor-deportes button{   
+    grid-row: 4;
+    padding: 0.3rem;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: red;
+    background-color: whitesmoke;
+    padding: 3%;
+    font-family: Acme;
+    border-top: red groove;
+    border-right: red groove;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
