@@ -45,36 +45,16 @@
     padding: 0.3rem;
 }
 
-a.button {
+a.buttond {
+    font-family: Acme;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
-    color: red;
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: red;
     padding: 3%;
     font-family: Acme;
-    border-top: red groove;
-    border-right: red groove;
+    border-top: whitesmoke groove;
+    border-right: whitesmoke groove;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

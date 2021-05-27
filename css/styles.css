@@ -207,38 +207,6 @@ header .header__redes i:hover {
   flex: 1;
   align-items: center; }
 
-@media (max-width: 575.98px) {
-  body {
-    background-image: url(../img/fondo-rosa.jpg); }
-  .body__caja-contenedor {
-    display: flex;
-    flex-flow: column; }
-  .header__navegacion {
-    width: 280px;
-    align-items: center; }
-  .header__navegacion ul {
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center; }
-  .header__caja-contenedor-cabecera {
-    width: 500px;
-    height: 300px; }
-  h1 {
-    font-size: 150%; }
-  h2 {
-    font-size: 100%;
-    color: coral; }
-  .header__escudo figure img {
-    width: 100px; }
-  .header__escudo figure:hover img {
-    width: 140px; }
-  .fondo-tienda {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto; } }
-
 /*Aca defino el estilo de la pagina de Deportes*/
 .fas.fa-shopping-cart {
   font-size: 1.3rem;
@@ -281,17 +249,18 @@ header .header__redes i:hover {
   grid-row: 4;
   padding: 0.3rem; }
 
-a.button {
+a.buttond {
+  font-family: Acme;
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
   text-decoration: none;
-  color: red;
-  background-color: whitesmoke;
+  color: whitesmoke;
+  background-color: red;
   padding: 3%;
   font-family: Acme;
-  border-top: red groove;
-  border-right: red groove; }
+  border-top: whitesmoke groove;
+  border-right: whitesmoke groove; }
 
 /*Aca defino la estructura de la pagina E-shops*/
 table {
@@ -395,3 +364,37 @@ a.button {
   height: auto;
   margin: 20px;
   padding: 20px; }
+
+@media (max-width: 575.98px) {
+  body {
+    background-image: url(../img/fondo-rosa.jpg); }
+  .body__caja-contenedor {
+    display: flex;
+    flex-flow: column; }
+  .header__navegacion {
+    width: 280px;
+    align-items: center; }
+  .header__navegacion ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center; }
+  .header__caja-contenedor-cabecera {
+    width: 500px;
+    height: 300px; }
+  h1 {
+    font-size: 150%; }
+  h2 {
+    font-size: 100%;
+    color: coral; }
+  .header__escudo figure img {
+    width: 100px; }
+  .header__escudo figure:hover img {
+    width: 140px; }
+  .fondo-tienda {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  .contenedor-deportes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
