@@ -34,4 +34,12 @@
 	.header__escudo figure:hover img {
 		width: 140px;
 	}
+	.fondo-tienda { 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;    
+   	}
 }
+
+
+

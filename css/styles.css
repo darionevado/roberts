@@ -233,7 +233,11 @@ header .header__redes i:hover {
   .header__escudo figure img {
     width: 100px; }
   .header__escudo figure:hover img {
-    width: 140px; } }
+    width: 140px; }
+  .fondo-tienda {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; } }
 
 /*Aca defino el estilo de la pagina de Deportes*/
 .caja-contenedor-deportes {
@@ -248,7 +252,7 @@ header .header__redes i:hover {
   align-items: center;
   padding: 15px 20px; }
 
-/*Aca defino la estructura de la tabla de la pagina E-shops*/
+/*Aca defino la estructura de la pagina E-shops*/
 table {
   border: 5px solid;
   border-color: whitesmoke;
@@ -279,7 +283,7 @@ th {
   font-size: 1rem;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto;
   align-items: center;
   justify-items: center;
   grid-gap: 1rem;

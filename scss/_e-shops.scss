@@ -1,4 +1,4 @@
-/*Aca defino la estructura de la tabla de la pagina E-shops*/
+/*Aca defino la estructura de la pagina E-shops*/
 
 table {
 	border: 5px solid;
@@ -12,7 +12,6 @@ th {
 	border: 0px solid;
 }
 
-
 .fas.fa-shopping-cart {
     font-size: 1.3rem;
     position: absolute;
@@ -25,8 +24,8 @@ th {
     padding: 1.8rem 0;
     margin-top: 2rem;    
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);     
+    grid-template-columns: repeat(2,1fr);    
+    grid-template-rows: repeat(2,1fr);        
     grid-row-gap: 30px;   
 }
 
@@ -35,7 +34,7 @@ th {
     font-size: 1rem;   
     display: grid;
     grid-template-columns: auto; 
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
     align-items: center;  
     justify-items: center; 
     grid-gap: 1rem;   
