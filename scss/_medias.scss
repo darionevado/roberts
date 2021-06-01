@@ -7,7 +7,7 @@
 		flex-flow: column;
 	}
 	.header__navegacion {
-		width: 280px;
+		width: 200px;
 		align-items: center;
 	}
 	.header__navegacion ul{
@@ -22,12 +22,15 @@
 		height: 300px;
 	}
 	h1 {
-		font-size: 150%;
+		font-size: 100%;
 	}
 	h2 {
-		font-size: 100%;
+		font-size: 70%;
         color: coral;
     }
+	h4 {
+		font-size: 50%;
+	}
 	h5 {
 		font-size: 80%;
 	}
@@ -50,5 +53,8 @@
 	.contenedor-video {
 		width: 450px;
 		height: 250px;
+	}
+	.materialbox-caption {
+		width: 90%;
 	}
 }

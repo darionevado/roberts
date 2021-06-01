@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Estilos de mi Sitio Web*/
 * {
   margin: 0;
@@ -29,9 +30,8 @@ h3 {
 
 h4 {
   font-family: 'Acme', sans-serif;
-  margin: top;
   color: whitesmoke;
-  font-size: 60 px; }
+  font-size: 120%; }
 
 h5 {
   font-family: 'Acme', sans-serif;
@@ -93,7 +93,7 @@ body {
   align-items: center;
   list-style: none; }
 
-.buscador {
+.header__buscador {
   grid-area: buscador;
   padding-top: 5%; }
 
@@ -193,25 +193,9 @@ header .header__redes i:hover {
   color: red; }
 
 /*Aca defino la estructura del pie de pagina*/
-.footer__caja-contenedor-footer {
-  display: flex;
-  flex-flow: row nowrap;
-  background-image: linear-gradient(red, whitesmoke);
-  width: 100%;
-  height: 80px; }
-
-.footer__legales {
-  padding: 10px 10px;
-  display: flex;
-  flex: 1;
-  margin-top: 10px;
-  align-items: center; }
-
-.footer__disenador {
-  padding: 20px 20px;
-  display: flex;
-  flex: 1;
-  align-items: center; }
+.text-dark {
+  font-family: 'Acme', sans-serif;
+  color: whitesmoke; }
 
 /*Aca defino el estilo de la pagina de Deportes*/
 .fas.fa-shopping-cart {
@@ -266,7 +250,8 @@ a.buttond {
   padding: 3%;
   font-family: Acme;
   border-top: whitesmoke groove;
-  border-right: whitesmoke groove; }
+  border-right: whitesmoke groove;
+  border-radius: 10px; }
 
 /*Aca defino la estructura de la pagina E-shops*/
 table {
@@ -351,7 +336,8 @@ a.button {
   padding: 3%;
   font-family: Acme;
   border-top: red groove;
-  border-right: red groove; }
+  border-right: red groove;
+  border-radius: 15px; }
 
 /*Aca defino el estilo del formulario de la pagina Contacto*/
 .body__formulario {
@@ -371,6 +357,34 @@ a.button {
   margin: 20px;
   padding: 20px; }
 
+/*Aca defino el estilo de la página Historia*/
+.galeria img {
+  box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.6);
+  border-radius: 15px; }
+
+.materialbox-caption {
+  bottom: 30px;
+  right: 0;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  background: #000;
+  box-shadow: 5px 5px #fff;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px; }
+
+.galeria .col {
+  margin-bottom: 20px; }
+
+/*Aca defino el estilo de la página Social*/
+.accordion-header {
+  color: red; }
+
+.accordion-item {
+  color: red; }
+
 @media (max-width: 575px) {
   body {
     background-image: url(../img/fondo-rosa.jpg); }
@@ -378,7 +392,7 @@ a.button {
     display: flex;
     flex-flow: column; }
   .header__navegacion {
-    width: 280px;
+    width: 200px;
     align-items: center; }
   .header__navegacion ul {
     list-style: none;
@@ -390,10 +404,12 @@ a.button {
     width: 500px;
     height: 300px; }
   h1 {
-    font-size: 150%; }
+    font-size: 100%; }
   h2 {
-    font-size: 100%;
+    font-size: 70%;
     color: coral; }
+  h4 {
+    font-size: 50%; }
   h5 {
     font-size: 80%; }
   .header__escudo figure img {
@@ -408,4 +424,6 @@ a.button {
     grid-template-rows: repeat(4, 1fr); }
   .contenedor-video {
     width: 450px;
-    height: 250px; } }
+    height: 250px; }
+  .materialbox-caption {
+    width: 90%; } }

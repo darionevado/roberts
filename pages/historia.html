@@ -29,8 +29,12 @@
     <!--Fuente de Google Dela Gothic One para el Menu-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">    
+
     <!--Animacion de las Fuentes con Animate.css-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 </head>
 
@@ -107,7 +111,6 @@
                             <li><a href="deportes/futbol.html">Fútbol</a></li>
                             <li><a href="deportes/bochas.html">Bochas</a></li>
                             <li><a href="deportes/patin.html">Patín</a></li>
-                            <li><a href="deportes/arqueria.html">Arquería</a></li>
                         </ul> 
                     </li>
                     <li>
@@ -126,34 +129,77 @@
     <!--Pagina de la Seccion Historia-->
         
     <h1>HISTORIA</h1>
-    <h2>Esta es la historia de nuestro Club</h2>
-    <br>
-
+    <h2>Esta es la historia audiovisual de nuestro querido Club</h2>
+    
     <!--Video con la historia de Youtube-->
-    <iframe class="contenedor-video" width="900" height="500" src="https://www.youtube.com/embed/TdLyJrivY7s" title="YouTube video player"
-        frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <br>
+    <iframe width="854" height="480" src="https://www.youtube.com/embed/TdLyJrivY7s" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
     <br>
+
+    <h2>Aquí compilamos algunos de los mejores momentos de nuestra rica historia social</h2>
+    <br>
     
+    <!--Tarjetas con Bootstrap, puedo ir agregando mas tarjetas para poner mas historias-->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+        <div class="card">
+            <img src="../img/historia/foto01.jpg" class="card-img-top" alt="Festejos Campeonato del 64">
+            <div class="card-body">
+            <h5 class="card-title">FESTEJOS DEL CAMPEONATO DEL 64</h5>
+            <p class="card-text">Festejos por el campeonato de Primera División de Fútbol de 1964, puede observarse que las calles donde se encuentra nuetras sede social aun eran de tierra.</p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="../img/historia/foto02.jpg" class="card-img-top" alt="Conmemoración 90º Aniversario">
+            <div class="card-body">
+            <h5 class="card-title">Conmemoración 90º Aniversario del Club</h5>
+            <p class="card-text">En un contexto muy triste, durante esta pandemia por el coronavirus, se realizó un breve acto para conmemorar nuestro 90º Aniversario en mastil del campo de deportes .</p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="../img/historia/foto03.jpg" class="card-img-top" alt="Equipo historico del 70'">
+            <div class="card-body">
+            <h5 class="card-title">EQUIPO DE PRIMERA DE 1970</h5>
+            <p class="card-text">Este fue el equipo de primera división de 1970, el cual estaba integrado por reconocidos vecinos de nuestra localidad, algunos de los cuales continuan aun hoy ligados a nuestro club y otros ya nos estan fisicamente entre nosotros</p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="../img/historia/foto04.jpg" class="card-img-top" alt="Los Reyes Magos con nuestro Presidente">
+            <div class="card-body">
+            <h5 class="card-title">LOS REYES MAGOS EN NUESTRA SEDE SOCIAL</h5>
+            <p class="card-text">Como desde hace 40 años los Reyes Magos juegan un truquito con el Presidente de la Institución, secundado por la Reina y sus Princesas, antes de salir a repartir los juguetes para todos los niños de nuestra ciudad</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <!--Agradecimientos-->
-    <h5>Un agradecimiento muy especial para mi amigo Adrian Wirz que me facilito todo el material audiovisual para este trabajo.</h5>
+    <br>
+    <h5>Un agradecimiento muy especial para mi amigo Adrian Wirz que me facilitó todo el material audiovisual para este trabajo,
+        el mismo es de su exclusiva propiedad intelectual.</h5>
     <h5>Este trabajo está dedicado a mi hermosa familia que siempre me apoya en todo lo que emprendo.</h5>
     <br>
 
-    <footer>
-        <div class="footer__caja-contenedor-footer">
-            <!--Pie de pagina-->
-            <div class="footer__legales">
-                <h4>© Copyright 2021 - Sitio Web Oficial del Club S. y D. Cecil A. Roberts de Salliqueló <br>Todos los derechos reservados</h4>
-            </div>
-        
+    <!--Pie de pagina con Bootstrap-->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-image: linear-gradient(red, whitesmoke)">
+            <!--Legales en Pie de Pagina-->
+            © Copyright 2021 - Sitio Web Oficial del Club S. y D. Cecil A. Roberts de Salliqueló - Todos los derechos reservados
+            <a class="text-dark" href="https://shs-soluciones-informaticas.negocio.site/?m=true"target="_blank">
+            <img src="../img/shs.jpg" height="40px" width="120px" alt="SHS Soluciones Informáticas"></a>
             <!--Publicidad Diseñador en Pie de pagina-->
-            <div class="footer__disenador">
-                <a href="https://shs-soluciones-informaticas.negocio.site/?m=true" target="_blank"><img src="../img/shs.jpg" height="60px" width="150px" alt="SHS Soluciones Informáticas" title="SHS"></a>  
-                <h4>Desarollada por Darío Nevado para CODERHOUSE</h4>
-            </div>
+            Desarollada por Darío Nevado para CODERHOUSE
         </div>
     </footer>
+
 
 </body>
 
