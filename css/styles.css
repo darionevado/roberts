@@ -197,6 +197,26 @@ header .header__redes i:hover {
   font-family: 'Acme', sans-serif;
   color: whitesmoke; }
 
+.footer__caja-contenedor-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: linear-gradient(red, whitesmoke);
+  width: 100%;
+  height: 80px; }
+
+.footer__legales {
+  padding: 10px 10px;
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+  align-items: center; }
+
+.footer__disenador {
+  padding: 20px 20px;
+  display: flex;
+  flex: 1;
+  align-items: center; }
+
 /*Aca defino el estilo de la pagina de Deportes*/
 .fas.fa-shopping-cart {
   font-size: 1.3rem;
