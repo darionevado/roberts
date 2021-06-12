@@ -134,7 +134,6 @@ header .header__redes i:hover {
 .header__navegacion__menu > li > a {
   display: block;
   padding: 15px 20px;
-  /*border-style: ridge;*/
   color: red;
   font-family: 'Dela Gothic One', cursive;
   text-decoration: none; }
@@ -155,7 +154,6 @@ header .header__redes i:hover {
 .header__navegacion__menu__submenu li a {
   display: block;
   padding: 15px;
-  /*border-style: ridge;*/
   color: #fff;
   font-family: 'Dela Gothic One', cursive;
   text-decoration: none; }
@@ -420,6 +418,10 @@ a.button {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center; }
+  .header__navegacion__menu__submenu {
+    flex-wrap: wrap;
+    height: 0px;
+    overflow: hidden; }
   .header__caja-contenedor-cabecera {
     width: 500px;
     height: 300px; }

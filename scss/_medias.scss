@@ -10,13 +10,20 @@
 		width: 200px;
 		align-items: center;
 	}
-	.header__navegacion ul{
+	.header__navegacion ul {
 		list-style: none;
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-evenly;
 		align-items: center;
 	}
+
+	.header__navegacion__menu__submenu {
+		flex-wrap: wrap;
+		height: 0px;
+		overflow: hidden;
+	}
+
 	.header__caja-contenedor-cabecera {
 		width: 500px;
 		height: 300px;
