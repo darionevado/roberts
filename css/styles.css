@@ -1,5 +1,5 @@
-@charset "UTF-8";
 /*Estilos de mi Sitio Web*/
+/*Aca defino el estilo de todos los elementos de la pagina principal*/
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +39,7 @@ h5 {
   color: red;
   font-size: 120%; }
 
+/*Aca defino el estilo de todos los elementos del header de todas las paginas (Cabecera, Menu, Buscador, etc.*/
 /*Comienzo de la definicion de las zonas con flex*/
 body {
   background-image: url(../img/fondo.jpg);
@@ -162,7 +163,7 @@ header .header__redes i:hover {
   visibility: visible;
   opacity: 1; }
 
-/*Comienzo del BODY*/
+/*Definicion del body de la pagina home*/
 .body__caja-contenedor {
   display: flex;
   flex-flow: row nowrap;
@@ -190,7 +191,7 @@ header .header__redes i:hover {
   font-style: italic;
   color: red; }
 
-/*Aca defino la estructura del pie de pagina*/
+/*Aca defino la estructura del pie de todas las paginas*/
 .text-dark {
   font-family: 'Acme', sans-serif;
   color: whitesmoke; }
@@ -215,7 +216,7 @@ header .header__redes i:hover {
   flex: 1;
   align-items: center; }
 
-/*Aca defino el estilo de la pagina de Deportes*/
+/*Aca defino el estilo de la pagina de Deportes y sus paginas hijas*/
 .fas.fa-shopping-cart {
   font-size: 1.3rem;
   position: absolute;
@@ -271,7 +272,7 @@ a.buttond {
   border-right: whitesmoke groove;
   border-radius: 10px; }
 
-/*Aca defino la estructura de la pagina E-shops*/
+/*Aca defino la estructura de la pagina E-shops y sus componentes*/
 table {
   border: 5px solid;
   border-color: whitesmoke;
@@ -357,7 +358,7 @@ a.button {
   border-right: red groove;
   border-radius: 15px; }
 
-/*Aca defino el estilo del formulario de la pagina Contacto*/
+/*Aca defino el estilo de la pagina Contacto*/
 .body__formulario {
   width: 940px;
   height: 320px;
@@ -375,7 +376,7 @@ a.button {
   margin: 20px;
   padding: 20px; }
 
-/*Aca defino el estilo de la página Historia*/
+/*Aca defino el estilo de la pagina Historia*/
 .galeria img {
   box-shadow: 0 8px 10px -4px rgba(0, 0, 0, 0.6);
   border-radius: 15px; }
@@ -396,13 +397,14 @@ a.button {
 .galeria .col {
   margin-bottom: 20px; }
 
-/*Aca defino el estilo de la página Social*/
+/*Aca defino el estilo de la pagina Social*/
 .accordion-header {
   color: red; }
 
 .accordion-item {
   color: red; }
 
+/*Definicion de las Medias Queries para que el sitio sea responsivo*/
 @media (max-width: 575px) {
   body {
     background-image: url(../img/fondo-rosa.jpg); }
